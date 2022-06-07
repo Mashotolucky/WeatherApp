@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { LocationComponent } from './components/location/location.component';
 import { ForecastComponent } from './components/forecast/forecast.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,7 +16,8 @@ import { ForecastComponent } from './components/forecast/forecast.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
